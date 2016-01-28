@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * OAuth 1.0 server and client library.
@@ -841,7 +840,7 @@ class OAuthUtil {
         }
       }
       // The "Authorization" header may get turned into "Auth".
-      if ($out['Auth']) {
+      if (isset($out['Auth'])) {
         $out['Authorization'] = $out['Auth'];
       }
     }
