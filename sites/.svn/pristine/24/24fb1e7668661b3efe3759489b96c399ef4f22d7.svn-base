@@ -1,7 +1,0 @@
-;$Id$
-
-name = Add User Defaults
-description = Sets user defaults when admin creates new user.
-package = Drupal 7 Development
-core = 7.x
-files[] = adduserdefaults.module
