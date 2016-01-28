@@ -148,12 +148,3 @@ DirectoryIndex index.php index.html index.htm
   # Disable content sniffing, since it's an attack vector.
   Header always set X-Content-Type-Options nosniff
 </IfModule>
-
-#passwd start
-AuthType Basic
-AuthName "Password Protected Area"
-AuthUserFile /usr/home/wordmonkey/public_html/countercorp/.passwd
-Require valid-user
-<Files .passwd>
-deny from all
-</Files>
