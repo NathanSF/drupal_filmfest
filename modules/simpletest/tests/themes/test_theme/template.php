@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * Tests a theme overriding a suggestion of a base theme hook.
  */

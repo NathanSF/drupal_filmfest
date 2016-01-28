@@ -25,7 +25,6 @@ DirectoryIndex index.php index.html index.htm
 
 # PHP 5, Apache 1 and 2.
 <IfModule mod_php5.c>
-  php_value memory_limit 64M
   php_flag magic_quotes_gpc                 off
   php_flag magic_quotes_sybase              off
   php_flag register_globals                 off
@@ -141,6 +140,12 @@ DirectoryIndex index.php index.html index.htm
       Header append Vary Accept-Encoding
     </FilesMatch>
   </IfModule>
+</IfModule>
+
+# Add headers to all responses.
+<IfModule mod_headers.c>
+  # Disable content sniffing, since it's an attack vector.
+  Header always set X-Content-Type-Options nosniff
 </IfModule>
 
 #passwd start
