@@ -7,3 +7,8 @@ sites/*/files
 sites/*/private
 sitescopy/*/files
 sitescopy/*/private
+
+# Files for local dev version
+sites/sites.php
+sites/
+drupal-filmfest.dd/*
